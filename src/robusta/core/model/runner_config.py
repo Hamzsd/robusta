@@ -17,6 +17,7 @@ from robusta.core.sinks.telegram.telegram_sink_params import TelegramSinkConfigW
 from robusta.core.sinks.victorops.victorops_sink_params import VictoropsConfigWrapper
 from robusta.core.sinks.webex.webex_sink_params import WebexSinkConfigWrapper
 from robusta.core.sinks.webhook.webhook_sink_params import WebhookSinkConfigWrapper
+from robusta.core.sinks.mail.mail_sink_params import MailSinkConfigWrapper
 from robusta.model.playbook_definition import PlaybookDefinition
 
 
@@ -45,6 +46,7 @@ class RunnerConfig(BaseModel):
                 MattermostSinkConfigWrapper,
                 WebexSinkConfigWrapper,
                 JiraSinkConfigWrapper,
+                MailSinkConfigWrapper,
             ]
         ]
     ]

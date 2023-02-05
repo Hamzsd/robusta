@@ -16,6 +16,7 @@ from robusta.core.sinks.telegram import TelegramSink, TelegramSinkConfigWrapper
 from robusta.core.sinks.victorops import VictoropsConfigWrapper, VictoropsSink
 from robusta.core.sinks.webex import WebexSink, WebexSinkConfigWrapper
 from robusta.core.sinks.webhook import WebhookSink, WebhookSinkConfigWrapper
+from robusta.core.sinks.mail import MailSink, MailSinkConfigWrapper
 
 
 class SinkFactory:
@@ -34,6 +35,7 @@ class SinkFactory:
         MattermostSinkConfigWrapper: MattermostSink,
         WebexSinkConfigWrapper: WebexSink,
         JiraSinkConfigWrapper: JiraSink,
+        MailSinkConfigWrapper: MailSink,
     }
 
     @classmethod
